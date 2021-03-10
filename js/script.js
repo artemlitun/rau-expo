@@ -34,3 +34,19 @@ jQuery(document).ready(function ($) {
     // rows: 2,
   });
 });
+
+$("#getting-started").countdown("2021/04/14", function (event) {
+  $(this).html(
+    "<div>" +
+      event.strftime("%D") +
+      "</div><div>" +
+      event.strftime("%H") +
+      "</div><div>" +
+      event.strftime("%M") +
+      "</div><div>" +
+      event.strftime("%S") +
+      "</div>"
+  );
+
+  //event.strftime("%D %H %M %S"));
+});
