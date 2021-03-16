@@ -14,6 +14,20 @@ jQuery(document).ready(function ($) {
     //   touchThreshold: 5;
     rows: 2,
     // mobile ---- rows 6
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          autoplay: false,
+
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          rows: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
@@ -32,6 +46,17 @@ jQuery(document).ready(function ($) {
     // autoplaySpeed: 500,
     //  touchThreshold: 5;
     // rows: 2,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
